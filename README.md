@@ -28,7 +28,13 @@ and ufter installing node_modules you can run cypress, with command
 ```
 npm run cypress
 ```
+
+if everything was done correctly, you will start the Cypress window as shown
+![Screenshot_1](https://user-images.githubusercontent.com/83832026/168994593-a1ed75e8-5f61-4391-8969-d4759cfd2f6e.png)
+
 and click *redmine_testing.spec.js*.
+![Screenshot_2](https://user-images.githubusercontent.com/83832026/168994647-d2a17d36-4c5f-4b06-ad53-ba06ae4f6494.png)
+
 
 After that test should automaticaly run.
 

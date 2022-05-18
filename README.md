@@ -20,7 +20,11 @@ If you get stuck, here is more help:
 
 #### 3. Open this project in your IDE
 
-For run this tests you need to run command 
+For run this tests you need to run install node_module package, with command
+```
+npm install
+```
+and ufter installing node_modules you can run cypress, with command
 ```
 npm run cypress
 ```

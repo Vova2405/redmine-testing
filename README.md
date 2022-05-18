@@ -12,13 +12,13 @@ If you get stuck, here is more help:
 - [Cypress Docs](https://docs.cypress.io/)
 - [Cypress CLI Tool Docs](https://github.com/cypress-io/cypress-cli)
 
-#### 1 Instal Cypress
+#### 1. Instal Cypress
 
 [Follow these instructions to install Cypress.](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
 
-#### 2 Clone this repo
+#### 2. Clone this repo
 
-#### 3 Open this project in your IDE
+#### 3. Open this project in your IDE
 
 For run this tests you need to run command 
 ```

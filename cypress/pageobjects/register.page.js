@@ -6,7 +6,7 @@ const firstNameInput = '#user_firstname';
 const lastNameInput = '#user_lastname';
 const emailInput = '#user_mail';
 const ircNickInput = '#user_custom_field_values_3';
-const submitButton = '[value="Submit"]';
+const submitButton = '#new_user [name="commit"]';
 const registerButton = '[href="/account/register"]';
 const notice = '#flash_notice';
 const wrongEmailNotice = '#errorExplanation'

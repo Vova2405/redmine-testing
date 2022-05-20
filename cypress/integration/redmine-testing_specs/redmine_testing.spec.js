@@ -28,7 +28,7 @@ describe('redmine website testing', () => {
         cy.visit(URL);
     })
 
-    it('testing the registration form with valid data', () => {
+    xit('testing the registration form with valid data', () => {
 
         
         main.clickRegisterButton();
@@ -43,7 +43,7 @@ describe('redmine website testing', () => {
         register.checkNotice();
     })
 
-    it('testing the registration form with incorrect email', () => {
+    xit('testing the registration form with incorrect email', () => {
 
         main.clickRegisterButton();
         register.setLoginValue('newtesterr1');
@@ -57,7 +57,7 @@ describe('redmine website testing', () => {
         register.checkEmailNotice()
     })
 
-    it('testing the registration form with a login that is already in use', () => {
+    xit('testing the registration form with a login that is already in use', () => {
 
         main.clickRegisterButton();
         register.setLoginValue('newtesterrr');
@@ -71,7 +71,7 @@ describe('redmine website testing', () => {
         register.checkEmailNotice()
     })
 
-    it('testing the login form with valid data', () =>{
+    xit('testing the login form with valid data', () =>{
 
         main.clickSignInButton();
         loginPage.setLoginValue('phenomen2405');
@@ -81,7 +81,7 @@ describe('redmine website testing', () => {
 
     })
 
-    it('testing the login form with incorrect data', () =>{
+    xit('testing the login form with incorrect data', () =>{
 
         main.clickSignInButton();
         loginPage.setLoginValue('phenomen2404');
@@ -90,7 +90,7 @@ describe('redmine website testing', () => {
 
     })
 
-    it('testing the "Forgot password" form with valid data', () => {
+    xit('testing the "Forgot password" form with valid data', () => {
 
         main.clickSignInButton();
         loginPage.clickLostPasswordButton();
@@ -99,20 +99,20 @@ describe('redmine website testing', () => {
 
     })
 
-    it('testing the "Search" option', () => {
+    xit('testing the "Search" option', () => {
 
         main.setSearchValue();
 
     })
 
-    it('testing the downloading release to local computer', () => {      //some error for wait page load, but test work good
+    xit('testing the downloading release to local computer', () => {      //some error for wait page load, but test work good
 
         main.clickDownloadButton();
         main.clickDownload()
 
     })
 
-    it('check transitions between pages', ()=> {
+    xit('check transitions between pages', ()=> {
 
         main.clickOverviewButton();
         headers.overviewHeaderIsVisible()
@@ -134,7 +134,7 @@ describe('redmine website testing', () => {
         headers.rootHeaderIsVisible();
     })
 
-    it('testing Forum theme visit', () => {
+    xit('testing Forum theme visit', () => {
 
         main.clickForumsButton();
         main.clickOpenDiscussionLink();
@@ -143,7 +143,7 @@ describe('redmine website testing', () => {
         main.previousButtonIsVisible();
     })
 
-    it('testing "Last message filtering" on Forum page', () => {
+    xit('testing "Last message filtering" on Forum page', () => {
 
         main.clickForumsButton();
         main.clickOpenDiscussionLink();
@@ -154,55 +154,55 @@ describe('redmine website testing', () => {
 
     })
 
-    it('testing visibility the Project header', () => {
+    xit('testing visibility the Project header', () => {
 
         main.clickProjectButton();
         headers.projectHeaderIsVisible()
     })
 
-    it('testing the right sidebar Wiki links (Start page)', () => {
+    xit('testing the right sidebar Wiki links (Start page)', () => {
 
         main.clickStartPageLink();
         links.getStartPageLink();
 
     })
 
-    it('testing the right sidebar Wiki links (Index by title)', () => {
+    xit('testing the right sidebar Wiki links (Index by title)', () => {
 
         main.clickIndexByTitleLink();
         links.getIndexByTitleLink();
         
     })
 
-    it('testing the right sidebar Wiki links (Index by date)', () => {
+    xit('testing the right sidebar Wiki links (Index by date)', () => {
 
         main.clickIndexByDateLink();
         links.getIndexByDateLink();
         
     })
 
-    it("testing the right sidebar Resources links (User's Guide)", () => {
+    xit("testing the right sidebar Resources links (User's Guide)", () => {
 
         main.clickUsersGuideLink();
         links.getUsersGuideLink()
         
     })
 
-    it("testing the right sidebar Resources links (Developer's Guide)", () => {
+    xit("testing the right sidebar Resources links (Developer's Guide)", () => {
 
         main.clickDevelopersGuideLink();
         links.getDevelopersGuideLink();
         
     })
 
-    it("testing the right sidebar Resources links (Plugins)", () => {
+    xit("testing the right sidebar Resources links (Plugins)", () => {
 
         main.clickPluginsLink();
         links.getPluginsLink();
         
     })
 
-    it("testing the right sidebar Resources links (Security)", () => {
+    xit("testing the right sidebar Resources links (Security)", () => {
 
         main.clickSecurityLink();
         links.getSecurityLink();

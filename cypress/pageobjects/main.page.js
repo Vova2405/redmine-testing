@@ -20,7 +20,7 @@ const privacyPolicyLink = '#sidebar p [href="/projects/redmine/wiki/PrivacyPolic
 const startPagelink = '#sidebar li a[href="/"]';
 const indexByTitleLink = '[href="/projects/redmine/wiki/index"]';
 const indexByDateLink = '[href="/projects/redmine/wiki/date_index"]';
-const downloadLink = '[href="/releases/redmine-4.1.7.tar.gz"]';
+const downloadLink = '//a[contains(text(),"tar.gz") and contains(text(), "5.")]';
 const openDiscussionLink = '[href="/projects/redmine/boards/1"]';
 const howToContributeLink = '[href="/boards/1/topics/4325"]';
 const nextPageButton = 'a[class="next"]';
@@ -28,10 +28,20 @@ const previousButton = 'a[class="previous"]';
 const lastMessageFilter = 'th a[class]';
 const firstElement = '[class="message odd sticky "] td[class="subject"] a';
 const projectButton = '[href="/projects"]';
+const myAccountButton ='#account [href="/my/account"]';
+const accountInfoButton = '#loggedas [href="/users/604355"]'
 
 
 
 class MainPage{
+
+    clickAccountInfoButton() {
+        cy.get(accountInfoButton).click();
+    }
+
+    clickMyAccountButton() {
+        cy.get(myAccountButton).click();
+    }
 
 
     clickRegisterButton() {
@@ -121,7 +131,7 @@ class MainPage{
     }
 
     clickDownload() {
-        cy.get(downloadLink).click()
+        cy.xpath(downloadLink).click()
 
     }
 
@@ -157,4 +167,4 @@ class MainPage{
         cy.get(projectButton).click();
     }
 }
-export default MainPage
+export default MainPage 

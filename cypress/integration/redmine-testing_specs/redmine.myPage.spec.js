@@ -32,11 +32,11 @@ describe('redmine My page testing', () => {
         main.clickMyPageButton();
     })
 
-    xit('should be visible "My page" page header', () => {
+    it('should be visible "My page" page header', () => {
         myPage.myPageHeaderIsVisible();
     })
 
-    xit('should add and delete "Calendar" block to page', () => {
+    it('should add and delete "Calendar" block to page', () => {
         myPage.clickPersonalizeButton();
         myPage.selectCalendarOption();
         myPage.clickAddButton();
@@ -46,7 +46,7 @@ describe('redmine My page testing', () => {
 
     })
 
-    xit('should add and delete "Issues assigned to me" block to page', () => {
+    it('should add and delete "Issues assigned to me" block to page', () => {
         myPage.clickPersonalizeButton();
         myPage.selectAssignedToMeOption();
         myPage.clickAddButton();
@@ -56,7 +56,7 @@ describe('redmine My page testing', () => {
 
     })
 
-    xit('should add and delete "Latest news" block to page', () => {
+    it('should add and delete "Latest news" block to page', () => {
         myPage.clickPersonalizeButton();
         myPage.selectNewsOption();
         myPage.clickAddButton();
@@ -66,7 +66,7 @@ describe('redmine My page testing', () => {
 
     })
 
-    xit('should add and delete "Documents" block to page', () => {
+    it('should add and delete "Documents" block to page', () => {
         myPage.clickPersonalizeButton();
         myPage.selectDocumensOption();
         myPage.clickAddButton();
@@ -76,7 +76,7 @@ describe('redmine My page testing', () => {
 
     })
 
-    xit('should add and delete "Spent time" block to page', () => {
+    it('should add and delete "Spent time" block to page', () => {
         myPage.clickPersonalizeButton();
         myPage.selectSpentTimeOption();
         myPage.clickAddButton();
@@ -86,7 +86,7 @@ describe('redmine My page testing', () => {
 
     })
 
-    xit('add button should not be visible, if add all options', () => {
+    it('add button should not be visible, if add all options', () => {
         myPage.clickPersonalizeButton(); 
         myPage.selectAssignedToMeOption();
         myPage.clickAddButton();
@@ -106,17 +106,17 @@ describe('redmine My page testing', () => {
         myPage.clickCloseOption(closeSpentTime);
     })
 
-    xit('should go to "Reported issues" URL', () => {
+    it('should go to "Reported issues" URL', () => {
         myPage.clickReportedIssuesButton();
         myPage.checkReportedIssuesPageURL();
     })
 
-    xit('should go to "Watched issues" URL', () => {
+    it('should go to "Watched issues" URL', () => {
         myPage.clickReportedIssuesButton();
         myPage.checkWatchedIssuesPageURL();
     })
 
-    xit('should hide status dropdown menu when Status checkbox is not checked', () => {
+    it('should hide status dropdown menu when Status checkbox is not checked', () => {
         myPage.clickReportedIssuesButton();
         myPage.checkStatusCheckbox();
         myPage.statusDropdownIsNotVisible();
@@ -124,7 +124,7 @@ describe('redmine My page testing', () => {
         myPage.statusCheckBoxIsChecked();
     })
 
-    xit('should hide author dropdown menu and authors input when Author checkbox is not checked', () => {
+    it('should hide author dropdown menu and authors input when Author checkbox is not checked', () => {
         myPage.clickReportedIssuesButton();
         myPage.checkAuthorCheckbox();
         myPage.authorDropdownIsNotVisible();
@@ -132,7 +132,7 @@ describe('redmine My page testing', () => {
         myPage.authorDropdownIsVisible();
     })
 
-    xit(`should appear only Bernard Rohloff's issues`, () => {
+    it(`should appear only Bernard Rohloff's issues`, () => {
         myPage.clickReportedIssuesButton();
         myPage.selectAuthor('Bernhard Rohloff');
         myPage.clickApplyButton();

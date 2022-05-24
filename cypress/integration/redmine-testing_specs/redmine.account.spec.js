@@ -26,7 +26,7 @@ describe('redmine user account testing', () => {
         main.clickMyAccountButton();
     })
 
-   xit('should change user first name', () => {
+   it('should change user first name', () => {
 
         accountPage.setNewFirstName('Ivan');
         accountPage.clickSaveButton();
@@ -41,7 +41,7 @@ describe('redmine user account testing', () => {
         accountInfo.checkUserNameInfo('Volodymyr');
     })
 
-    xit('should change user last name', () => {
+    it('should change user last name', () => {
 
         accountPage.setNewLastName('Ivanov');
         accountPage.clickSaveButton();
@@ -56,7 +56,7 @@ describe('redmine user account testing', () => {
         accountInfo.checkUserNameInfo('Hasyn');
     })
 
-    xit('should change IRC nick', () => {
+    it('should change IRC nick', () => {
 
         accountPage.setNewIRCNick('tester');
         accountPage.clickSaveButton();
@@ -71,7 +71,7 @@ describe('redmine user account testing', () => {
         accountInfo.chekIRCNickInfo('phenom2405');
     })
 
-    xit('should change email notification option', () => {
+    it('should change email notification option', () => {
 
         accountPage.changeOptionALL('all');
         accountPage.clickNotificationCheckbox();
@@ -85,7 +85,7 @@ describe('redmine user account testing', () => {
         accountPage.checkSelectedOption(myEvents);
     })
 
-    xit('should change display comments filter', () => {
+    it('should change display comments filter', () => {
         accountPage.selectCommentsOption('desc');
         accountPage.clickSaveButton();
         accountPage.checkCommentsFilter(reverseOrder);
@@ -94,7 +94,7 @@ describe('redmine user account testing', () => {
         accountPage.checkCommentsFilter(chronologicalOrder);
     })
 
-    xit('should change user password', () => {
+    it('should change user password', () => {
         accountPage.clickChangePasswordButton();
         accountPage.setOldPassword('noone111');
         accountPage.setNewPassword('noone1111');
@@ -108,7 +108,7 @@ describe('redmine user account testing', () => {
         accountPage.succesPaswordNotificationisVisible();
     })
 
-    xit('should flash "Wrong Password" notice', () => {
+    it('should flash "Wrong Password" notice', () => {
         accountPage.clickChangePasswordButton();
         accountPage.setOldPassword('noone000');
         accountPage.setNewPassword('noone1111');
@@ -123,14 +123,14 @@ describe('redmine user account testing', () => {
         accountPage.accountPageHeaderIsVisible();
     })
 
-    xit('delete account without checking the checkbox', () => {
+    it('delete account without checking the checkbox', () => {
         accountPage.clickDeleteAccountButton();
         accountPage.clickDeleteButton();
         main.clickMyAccountButton();
         accountPage.checkSidebarUserInfo('phenomen2405')
     })
 
-    xit('should log account info in console', () => {
+    it('should log account info in console', () => {
 
         main.clickAccountInfoButton();
         accountInfo.logIRCNickToConsole();

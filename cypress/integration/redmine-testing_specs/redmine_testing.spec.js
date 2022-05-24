@@ -28,7 +28,7 @@ describe('redmine website testing', () => {
         cy.visit(URL);
     })
 
-    xit('testing the registration form with valid data', () => {
+    it('testing the registration form with valid data', () => {
 
         
         main.clickRegisterButton();
@@ -43,7 +43,7 @@ describe('redmine website testing', () => {
         register.checkNotice();
     })
 
-    xit('testing the registration form with incorrect email', () => {
+    it('testing the registration form with incorrect email', () => {
 
         main.clickRegisterButton();
         register.setLoginValue('newtesterr1');
@@ -71,7 +71,7 @@ describe('redmine website testing', () => {
         register.checkEmailNotice()
     })
 
-    xit('testing the login form with valid data', () =>{
+    it('testing the login form with valid data', () =>{
 
         main.clickSignInButton();
         loginPage.setLoginValue('phenomen2405');
@@ -81,7 +81,7 @@ describe('redmine website testing', () => {
 
     })
 
-    xit('testing the login form with incorrect data', () =>{
+    it('testing the login form with incorrect data', () =>{
 
         main.clickSignInButton();
         loginPage.setLoginValue('phenomen2404');
@@ -90,7 +90,7 @@ describe('redmine website testing', () => {
 
     })
 
-    xit('testing the "Forgot password" form with valid data', () => {
+    it('testing the "Forgot password" form with valid data', () => {
 
         main.clickSignInButton();
         loginPage.clickLostPasswordButton();
@@ -99,20 +99,20 @@ describe('redmine website testing', () => {
 
     })
 
-    xit('testing the "Search" option', () => {
+    it('testing the "Search" option', () => {
 
         main.setSearchValue();
 
     })
 
-    xit('testing the downloading release to local computer', () => {      //some error for wait page load, but test work good
+    it('testing the downloading release to local computer', () => {      //some error for wait page load, but test work good
 
         main.clickDownloadButton();
         main.clickDownload()
 
     })
 
-    xit('check transitions between pages', ()=> {
+    it('check transitions between pages', ()=> {
 
         main.clickOverviewButton();
         headers.overviewHeaderIsVisible()
@@ -134,7 +134,7 @@ describe('redmine website testing', () => {
         headers.rootHeaderIsVisible();
     })
 
-    xit('testing Forum theme visit', () => {
+    it('testing Forum theme visit', () => {
 
         main.clickForumsButton();
         main.clickOpenDiscussionLink();
@@ -143,7 +143,7 @@ describe('redmine website testing', () => {
         main.previousButtonIsVisible();
     })
 
-    xit('testing "Last message filtering" on Forum page', () => {
+    it('testing "Last message filtering" on Forum page', () => {
 
         main.clickForumsButton();
         main.clickOpenDiscussionLink();
@@ -154,55 +154,55 @@ describe('redmine website testing', () => {
 
     })
 
-    xit('testing visibility the Project header', () => {
+    it('testing visibility the Project header', () => {
 
         main.clickProjectButton();
         headers.projectHeaderIsVisible()
     })
 
-    xit('testing the right sidebar Wiki links (Start page)', () => {
+    it('testing the right sidebar Wiki links (Start page)', () => {
 
         main.clickStartPageLink();
         links.getStartPageLink();
 
     })
 
-    xit('testing the right sidebar Wiki links (Index by title)', () => {
+    it('testing the right sidebar Wiki links (Index by title)', () => {
 
         main.clickIndexByTitleLink();
         links.getIndexByTitleLink();
         
     })
 
-    xit('testing the right sidebar Wiki links (Index by date)', () => {
+    it('testing the right sidebar Wiki links (Index by date)', () => {
 
         main.clickIndexByDateLink();
         links.getIndexByDateLink();
         
     })
 
-    xit("testing the right sidebar Resources links (User's Guide)", () => {
+    it("testing the right sidebar Resources links (User's Guide)", () => {
 
         main.clickUsersGuideLink();
         links.getUsersGuideLink()
         
     })
 
-    xit("testing the right sidebar Resources links (Developer's Guide)", () => {
+    it("testing the right sidebar Resources links (Developer's Guide)", () => {
 
         main.clickDevelopersGuideLink();
         links.getDevelopersGuideLink();
         
     })
 
-    xit("testing the right sidebar Resources links (Plugins)", () => {
+    it("testing the right sidebar Resources links (Plugins)", () => {
 
         main.clickPluginsLink();
         links.getPluginsLink();
         
     })
 
-    xit("testing the right sidebar Resources links (Security)", () => {
+    it("testing the right sidebar Resources links (Security)", () => {
 
         main.clickSecurityLink();
         links.getSecurityLink();

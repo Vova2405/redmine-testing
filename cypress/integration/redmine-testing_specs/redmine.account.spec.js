@@ -123,7 +123,7 @@ describe('redmine user account testing', () => {
         accountPage.accountPageHeaderIsVisible();
     })
 
-    xit('delete account with out checking hte checkbox', () => {
+    xit('delete account without checking the checkbox', () => {
         accountPage.clickDeleteAccountButton();
         accountPage.clickDeleteButton();
         main.clickMyAccountButton();
@@ -137,6 +137,8 @@ describe('redmine user account testing', () => {
         accountInfo.logLastConnectionDateToConsole();
         accountInfo.logReristeredOnDateToConsole()
     })
+
+    
 
     
 

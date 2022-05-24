@@ -29,11 +29,16 @@ const lastMessageFilter = 'th a[class]';
 const firstElement = '[class="message odd sticky "] td[class="subject"] a';
 const projectButton = '[href="/projects"]';
 const myAccountButton ='#account [href="/my/account"]';
-const accountInfoButton = '#loggedas [href="/users/604355"]'
+const accountInfoButton = '#loggedas [href="/users/604355"]';
+const myPageButton = '[href="/my/page"]';
 
 
 
 class MainPage{
+
+    clickMyPageButton() {
+        cy.get(myPageButton).click();
+    }
 
     clickAccountInfoButton() {
         cy.get(accountInfoButton).click();

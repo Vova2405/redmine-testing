@@ -57,7 +57,7 @@ describe('redmine website testing', () => {
         register.checkEmailNotice()
     })
 
-    xit('testing the registration form with a login that is already in use', () => {
+    it('testing the registration form with a login that is already in use', () => {
 
         main.clickRegisterButton();
         register.setLoginValue('newtesterrr');

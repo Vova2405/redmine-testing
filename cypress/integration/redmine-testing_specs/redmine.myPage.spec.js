@@ -112,7 +112,7 @@ describe('redmine My page testing', () => {
     })
 
     it('should go to "Watched issues" URL', () => {
-        myPage.clickReportedIssuesButton();
+        myPage.clickWatchedIssuesButton();
         myPage.checkWatchedIssuesPageURL();
     })
 

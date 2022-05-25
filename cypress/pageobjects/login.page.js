@@ -4,7 +4,7 @@
     const loginButton = '[name="login"]';
     const lostPasswordButton = '[href="/account/lost_password"]';
     const emailInput = '#mail';
-    const submitButton = '[value="Submit"]';
+    const submitButton = '[class="box tabular"] input[name="commit"]';
     const URL = 'https://www.redmine.org/';
     const userLogin = '[href="/users/604355"]'
 

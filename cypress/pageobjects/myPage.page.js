@@ -74,7 +74,7 @@ class MyPage{
     }
 
     checkReportedIssuesPageURL() {
-        cy.location().should('contain.text', 'https://www.redmine.org/issues?author_id=me&set_filter=1&sort=updated_on%3Adesc&status_id=%2A');
+        cy.url().should('eq', 'https://www.redmine.org/issues?author_id=me&set_filter=1&sort=updated_on%3Adesc&status_id=%2A');
     }
 
     clickWatchedIssuesButton() {
@@ -82,7 +82,7 @@ class MyPage{
     }
 
     checkWatchedIssuesPageURL() {
-        cy.location().should('contain.text', 'https://www.redmine.org/issues?set_filter=1&sort=updated_on%3Adesc&watcher_id=me');
+        cy.url().should('eq', 'https://www.redmine.org/issues?set_filter=1&sort=updated_on%3Adesc&watcher_id=me');
     }
 
     clickPersonalizeButton() {
